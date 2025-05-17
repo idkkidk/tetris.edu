@@ -1,17 +1,42 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Graphing Calculator</title>
+  <meta charset="UTF-8">
+  <title>GraphCalc</title>
   <style>
-    body { background-color: #f4f4f4; font-family: sans-serif; margin: 0; text-align: center; }
-    canvas { background: #000; display: block; margin: 20px auto; border: 1px solid #ccc; }
-    h1 { font-size: 20px; color: #444; }
+    body {
+      background: #1e1e1e;
+      color: #ccc;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #4fc3f7;
+    }
+    canvas {
+      border: 2px solid #555;
+      background: #000;
+      margin-top: 10px;
+    }
+    .controls {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #888;
+    }
   </style>
 </head>
 <body>
-  <h1>TI-84 Plus Graphing Utility</h1>
+  <h1>TI-84 Emulator</h1>
   <canvas id="game"></canvas>
+  <div class="controls">
+    Controls: ← → ↓ = Move, ↑/X = Rotate, Z = Rotate Left, A = 180°, Space = Drop
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
